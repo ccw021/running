@@ -243,7 +243,7 @@
 
         <!-- 狀態列 -->
         <div id="ui">
-            <div>生命：<span id="hp">❤️❤️❤️</span></div>
+            <div>生命：<span id="hp">❤️❤️❤️❤️</span></div>
             <div><span id="score">分數: 0</span></div>
         </div>
 
@@ -328,7 +328,7 @@
 
         // 開始遊戲
         function startGame() {
-            hp = 3;
+            hp = 4;
             score = 0;
             currentQIndex = 0;
             gameActive = true;
@@ -437,8 +437,8 @@
                     finalScoreEl.innerText = score;
                 }, 800);
             } else {
-                // 依據需求：每道問題之間等待約 20 秒
-                let timeLeft = 20;
+                // 依據需求：每道問題之間等待約 10 秒
+                let timeLeft = 10;
                 questionBox.innerHTML = `答題結束！等待下一題... 倒數 <span class="highlight">${timeLeft}</span> 秒`;
                 
                 waitTimer = setInterval(() => {
