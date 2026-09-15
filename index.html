@@ -437,8 +437,8 @@
                     finalScoreEl.innerText = score;
                 }, 800);
             } else {
-                // 依據需求：每道問題之間等待約 40 秒
-                let timeLeft = 40;
+                // 依據需求：每道問題之間等待約 20 秒
+                let timeLeft = 20;
                 questionBox.innerHTML = `答題結束！等待下一題... 倒數 <span class="highlight">${timeLeft}</span> 秒`;
                 
                 waitTimer = setInterval(() => {
